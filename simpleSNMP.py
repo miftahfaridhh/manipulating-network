@@ -1,6 +1,5 @@
 from scapy.all import *
 
-def packet_callback(packet):
-    print(packet.show())
+f = conf.route
 
-sniff(prn=packet_callback, filter="tcp", iface="eth0")
+print (f)
