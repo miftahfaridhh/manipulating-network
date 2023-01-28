@@ -69,7 +69,7 @@ def main(argv=None):
             opts, args = getopt.getopt(argv[1:],
                     "d:f:hi:p:v:",
                     ["data=", "flags=", "help", "iface=", "protocol=", "verbosity="])
-        except getopt.error, msg:
+        except getopt.error and msg:
             usage(msg, 2)
         config = {'protocol':'tcp'}
         for flag, value in opts:
