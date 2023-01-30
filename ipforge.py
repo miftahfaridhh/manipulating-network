@@ -45,7 +45,7 @@ def random_port():
 
 def ipforge(protocol=None, src=None, sport=None, flags=None, dst=None, dport=None, data=None, iface=None, verbosity=0):
     """Forge and send an IP packet."""
-    if sport is None: sport = random_port()
+    if sport is None: sport = random_port() 
     if dport is None: dport = random_port()
     if protocol is None: protocol = 'tcp'
     if protocol == 'tcp':
