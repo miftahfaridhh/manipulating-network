@@ -6,13 +6,14 @@ from random import randint
 import logging
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 from scapy.all import IP,TCP,UDP,conf,send
-from scapy.all import * 
-
+from scapy.all import *  
+  
 def error(msg, exit=None):
     """Write error message to stderr prefixed by program name and optionally exit."""
     print >>sys.stderr, "ipforge.py: %s" % msg
     if exit is not None:
         sys.exit(exit)
+    #anehbanget
 
 def usage(msg, exit=None):
     "Print message and usage on stderr and optionally exit."""
