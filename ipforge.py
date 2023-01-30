@@ -13,7 +13,6 @@ def error(msg, exit=None):
     print >>sys.stderr, "ipforge.py: %s" % msg
     if exit is not None:
         sys.exit(exit)
-    #anehbanget
 
 def usage(msg, exit=None):
     "Print message and usage on stderr and optionally exit."""
