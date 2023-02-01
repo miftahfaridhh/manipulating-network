@@ -82,15 +82,25 @@ class choice:
 	print("\nReset Completed\n")
 
 meth = int(raw_input("""Please select which module to run
+
 0 => Password Sniffing
+
 1 => Arp Spoofing
+
 2 => DNS Spoofing
+
 3 => DNS Spoofing (using dnsmasq)
+
 4 => Reverse SSH
+
 5 => Reverse Netcat
+
 6 => Reverse TCP Meterpreter
+
 7 => USB power only
+
 8 => Reset to Default
+
 =>  """))
 if meth < 0 or meth > 8:
 	print("Not a valid option!\n")
@@ -106,3 +116,4 @@ else:
                    7:c.power_only,
                    8:c.rst}
         options[meth]()
+
